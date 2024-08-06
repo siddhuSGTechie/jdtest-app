@@ -9,7 +9,7 @@ public class controller {
 
 	
 	@GetMapping("/getinfo/{name}/{place}")
-	public String getMessage(@PathVariable(name = "name") String name,String place) {
+	public String getMessage(@PathVariable(name = "name") String name,@PathVariable(name = "place") String place) {
 		return "Hi " + name + " Welcome to "+place+"...!" ;
 	}
 }

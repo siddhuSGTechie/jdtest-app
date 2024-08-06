@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class controller {
 
 	
-	@GetMapping("/getinfo/{name}")
-	public String getMessage(@PathVariable(name = "name") String name) {
-		return "Hi " + name + " Welcome to singapore...!" ;
+	@GetMapping("/getinfo/{name}/{place}")
+	public String getMessage(@PathVariable(name = "name") String name,String place) {
+		return "Hi " + name + " Welcome to "+place+"...!" ;
 	}
 }

@@ -43,6 +43,8 @@
 	</dependencies>
 
 	<build>
+		<finalName>jdtest_docker_app</finalName>
+
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
